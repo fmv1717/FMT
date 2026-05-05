@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>FMT Field Tracker</title>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="application/json" id="fmt-data">[{"id": "T1-C1-001", "tech": "Tech 1", "cluster": "WC-1 White Plains Hotels", "name": "White Plains Marriott", "address": "1 N Broadway, White Plains, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T1-C1-002", "tech": "Tech 1", "cluster": "WC-1 White Plains Hotels", "name": "Residence Inn White Plains", "address": "5 Barker Ave, White Plains, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T1-C1-003", "tech": "Tech 1", "cluster": "WC-1 White Plains Hotels", "name": "Crowne Plaza White Plains", "address": "66 Hale Ave, White Plains, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T1-C1-004", "tech": "Tech 1", "cluster": "WC-1 White Plains Hotels", "name": "Sonesta White Plains", "address": "15 Tarrytown Rd, White Plains, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T1-C1-005", "tech": "Tech 1", "cluster": "WC-1 White Plains Hotels", "name": "Hilton Westchester", "address": "699 Westchester Ave, Rye Brook, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T1-C1-006", "tech": "Tech 1", "cluster": "WC-1 White Plains Hotels", "name": "Marriott Rye Town", "address": "670 Westchester Ave, Rye Brook, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T1-C1-007", "tech": "Tech 1", "cluster": "WC-1 White Plains Hotels", "name": "Tarrytown House Estate", "address": "49 E Sunnyside Ln, Tarrytown, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T1-C1-008", "tech": "Tech 1", "cluster": "WC-1 White Plains Hotels", "name": "Courtyard Tarrytown", "address": "475 White Plains Rd, Tarrytown, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T1-C1-009", "tech": "Tech 1", "cluster": "WC-1 White Plains Hotels", "name": "Westchester Marriott", "address": "670 White Plains Rd, Tarrytown, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T1-C1-010", "tech": "Tech 1", "cluster": "WC-1 White Plains Hotels", "name": "Cambria Armonk", "address": "20 Business Park Dr, Armonk, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T1-C1-011", "tech": "Tech 1", "cluster": "WC-1 White Plains Hotels", "name": "AC Hotel White Plains", "address": "1 Water St, White Plains, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T1-C2-001", "tech": "Tech 1", "cluster": "WC-2 Westchester Corporate", "name": "IBM Armonk HQ", "address": "1 New Orchard Rd, Armonk, NY", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T1-C2-002", "tech": "Tech 1", "cluster": "WC-2 Westchester Corporate", "name": "MasterCard Purchase", "address": "2000 Purchase St, Purchase, NY", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T1-C2-003", "tech": "Tech 1", "cluster": "WC-2 Westchester Corporate", "name": "Pepsico Harrison", "address": "700 Anderson Hill Rd, Purchase, NY", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T1-C2-004", "tech": "Tech 1", "cluster": "WC-2 Westchester Corporate", "name": "Regeneron Tarrytown", "address": "777 Old Saw Mill River Rd, Tarrytown, NY", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T1-C2-005", "tech": "Tech 1", "cluster": "WC-2 Westchester Corporate", "name": "IBM Research Yorktown", "address": "1101 Kitchawan Rd, Yorktown Heights, NY", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T1-C2-006", "tech": "Tech 1", "cluster": "WC-2 Westchester Corporate", "name": "Fordham University", "address": "441 E Fordham Rd, Bronx, NY", "segment": "University", "contact_title": "Facilities Mgr"}, {"id": "T1-C2-007", "tech": "Tech 1", "cluster": "WC-2 Westchester Corporate", "name": "Pace University Pleasantville", "address": "861 Bedford Rd, Pleasantville, NY", "segment": "University", "contact_title": "Facilities Mgr"}, {"id": "T1-C2-008", "tech": "Tech 1", "cluster": "WC-2 Westchester Corporate", "name": "Sarah Lawrence College", "address": "1 Mead Way, Bronxville, NY", "segment": "University", "contact_title": "Facilities Mgr"}, {"id": "T1-C2-009", "tech": "Tech 1", "cluster": "WC-2 Westchester Corporate", "name": "Mercy College", "address": "555 Broadway, Dobbs Ferry, NY", "segment": "University", "contact_title": "Facilities Mgr"}, {"id": "T1-C3-001", "tech": "Tech 1", "cluster": "WC-3 Westchester Fitness", "name": "Equinox White Plains", "address": "1 City Center, White Plains, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T1-C3-002", "tech": "Tech 1", "cluster": "WC-3 Westchester Fitness", "name": "Planet Fitness White Plains", "address": "200 Hamilton Ave, White Plains, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T1-C3-003", "tech": "Tech 1", "cluster": "WC-3 Westchester Fitness", "name": "LA Fitness Yonkers", "address": "2500 Central Park Ave, Yonkers, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T1-C3-004", "tech": "Tech 1", "cluster": "WC-3 Westchester Fitness", "name": "Blink Fitness Yonkers", "address": "1839 Central Park Ave, Yonkers, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T1-C3-005", "tech": "Tech 1", "cluster": "WC-3 Westchester Fitness", "name": "YMCA White Plains", "address": "250 Mamaroneck Ave, White Plains, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T1-C3-006", "tech": "Tech 1", "cluster": "WC-3 Westchester Fitness", "name": "Anytime Fitness Tarrytown", "address": "100 White Plains Rd, Tarrytown, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T1-C3-007", "tech": "Tech 1", "cluster": "WC-3 Westchester Fitness", "name": "OrangeTheory Scarsdale", "address": "683 White Plains Rd, Scarsdale, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T1-C3-008", "tech": "Tech 1", "cluster": "WC-3 Westchester Fitness", "name": "SoulCycle Scarsdale", "address": "670 White Plains Rd, Scarsdale, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T1-C3-009", "tech": "Tech 1", "cluster": "WC-3 Westchester Fitness", "name": "CrossFit White Plains", "address": "100 Manhattan Ave, White Plains, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T1-C3-010", "tech": "Tech 1", "cluster": "WC-3 Westchester Fitness", "name": "Gold Gym Yonkers", "address": "579 Nepperhan Ave, Yonkers, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T1-C4-001", "tech": "Tech 1", "cluster": "WC-4 Westchester Medical", "name": "White Plains Hospital", "address": "41 E Post Rd, White Plains, NY", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T1-C4-002", "tech": "Tech 1", "cluster": "WC-4 Westchester Medical", "name": "Westchester Medical Center", "address": "100 Woods Rd, Valhalla, NY", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T1-C4-003", "tech": "Tech 1", "cluster": "WC-4 Westchester Medical", "name": "Northern Westchester Hospital", "address": "400 E Main St, Mount Kisco, NY", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T1-C4-004", "tech": "Tech 1", "cluster": "WC-4 Westchester Medical", "name": "Burke Rehabilitation", "address": "785 Mamaroneck Ave, White Plains, NY", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T1-C4-005", "tech": "Tech 1", "cluster": "WC-4 Westchester Medical", "name": "Phelps Memorial Hospital", "address": "701 N Broadway, Sleepy Hollow, NY", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T1-C4-006", "tech": "Tech 1", "cluster": "WC-4 Westchester Medical", "name": "Sound Shore Medical", "address": "16 Guion Pl, New Rochelle, NY", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T1-C4-007", "tech": "Tech 1", "cluster": "WC-4 Westchester Medical", "name": "St Johns Riverside Hospital", "address": "967 N Broadway, Yonkers, NY", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T1-C5-001", "tech": "Tech 1", "cluster": "WC-5 Westchester Clubs", "name": "Westchester Country Club", "address": "99 Biltmore Ave, Rye, NY", "segment": "Club/Resort", "contact_title": "GM"}, {"id": "T1-C5-002", "tech": "Tech 1", "cluster": "WC-5 Westchester Clubs", "name": "Sleepy Hollow Country Club", "address": "777 Albany Post Rd, Scarborough, NY", "segment": "Club/Resort", "contact_title": "GM"}, {"id": "T1-C5-003", "tech": "Tech 1", "cluster": "WC-5 Westchester Clubs", "name": "Wykagyl Country Club", "address": "1195 N Ave, New Rochelle, NY", "segment": "Club/Resort", "contact_title": "GM"}, {"id": "T1-C5-004", "tech": "Tech 1", "cluster": "WC-5 Westchester Clubs", "name": "Brae Burn Country Club", "address": "28 Club Rd, Purchase, NY", "segment": "Club/Resort", "contact_title": "GM"}, {"id": "T1-C5-005", "tech": "Tech 1", "cluster": "WC-5 Westchester Clubs", "name": "Ardsley Country Club", "address": "1025 Ardsley Rd, Ardsley-on-Hudson, NY", "segment": "Club/Resort", "contact_title": "GM"}, {"id": "T1-C5-006", "tech": "Tech 1", "cluster": "WC-5 Westchester Clubs", "name": "Bonnie Briar Country Club", "address": "808 Weaver St, Larchmont, NY", "segment": "Club/Resort", "contact_title": "GM"}, {"id": "T1-C5-007", "tech": "Tech 1", "cluster": "WC-5 Westchester Clubs", "name": "Century Country Club", "address": "100 Purchase St, Purchase, NY", "segment": "Club/Resort", "contact_title": "GM"}, {"id": "T1-C6-001", "tech": "Tech 1", "cluster": "WC-6 Westchester Retail", "name": "Galleria at White Plains", "address": "100 Main St, White Plains, NY", "segment": "Retail/Commercial", "contact_title": "Facilities Mgr"}, {"id": "T1-C6-002", "tech": "Tech 1", "cluster": "WC-6 Westchester Retail", "name": "Westchester Mall", "address": "125 Westchester Ave, White Plains, NY", "segment": "Retail/Commercial", "contact_title": "Facilities Mgr"}, {"id": "T1-C6-003", "tech": "Tech 1", "cluster": "WC-6 Westchester Retail", "name": "Cross County Shopping Center", "address": "800 Mall Walk, Yonkers, NY", "segment": "Retail/Commercial", "contact_title": "Facilities Mgr"}, {"id": "T1-C6-004", "tech": "Tech 1", "cluster": "WC-6 Westchester Retail", "name": "Ridge Hill Yonkers", "address": "1 Ridge Hill Blvd, Yonkers, NY", "segment": "Retail/Commercial", "contact_title": "Facilities Mgr"}, {"id": "T2-C1-001", "tech": "Tech 2", "cluster": "LI-1 Nassau Hotels", "name": "Garden City Hotel", "address": "45 7th St, Garden City, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T2-C1-002", "tech": "Tech 2", "cluster": "LI-1 Nassau Hotels", "name": "Marriott Long Island", "address": "101 James Doolittle Blvd, Uniondale, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T2-C1-003", "tech": "Tech 2", "cluster": "LI-1 Nassau Hotels", "name": "Hyatt Regency Hauppauge", "address": "1717 Motor Pkwy, Hauppauge, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T2-C1-004", "tech": "Tech 2", "cluster": "LI-1 Nassau Hotels", "name": "Marriott Melville", "address": "125 Wolf Rd, Melville, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T2-C1-005", "tech": "Tech 2", "cluster": "LI-1 Nassau Hotels", "name": "Hilton Melville", "address": "598 Broadhollow Rd, Melville, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T2-C1-006", "tech": "Tech 2", "cluster": "LI-1 Nassau Hotels", "name": "Oheka Castle", "address": "135 W Gate Dr, Huntington, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T2-C1-007", "tech": "Tech 2", "cluster": "LI-1 Nassau Hotels", "name": "Hampton Inn Garden City", "address": "1 North Ave, Garden City, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T2-C1-008", "tech": "Tech 2", "cluster": "LI-1 Nassau Hotels", "name": "Homewood Suites Garden City", "address": "821 Stewart Ave, Garden City, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T2-C2-001", "tech": "Tech 2", "cluster": "LI-2 Nassau Education", "name": "Adelphi University", "address": "1 South Ave, Garden City, NY", "segment": "University", "contact_title": "Facilities Mgr"}, {"id": "T2-C2-002", "tech": "Tech 2", "cluster": "LI-2 Nassau Education", "name": "Hofstra University", "address": "100 Hofstra University, Hempstead, NY", "segment": "University", "contact_title": "Facilities Mgr"}, {"id": "T2-C2-003", "tech": "Tech 2", "cluster": "LI-2 Nassau Education", "name": "LIU Post", "address": "720 Northern Blvd, Brookville, NY", "segment": "University", "contact_title": "Facilities Mgr"}, {"id": "T2-C2-004", "tech": "Tech 2", "cluster": "LI-2 Nassau Education", "name": "Nassau Community College", "address": "1 Education Dr, Garden City, NY", "segment": "University", "contact_title": "Facilities Mgr"}, {"id": "T2-C2-005", "tech": "Tech 2", "cluster": "LI-2 Nassau Education", "name": "NYIT Old Westbury", "address": "Northern Blvd, Old Westbury, NY", "segment": "University", "contact_title": "Facilities Mgr"}, {"id": "T2-C3-001", "tech": "Tech 2", "cluster": "LI-3 Nassau Fitness", "name": "LA Fitness Hicksville", "address": "250 Old Country Rd, Hicksville, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T2-C3-002", "tech": "Tech 2", "cluster": "LI-3 Nassau Fitness", "name": "Equinox Roslyn", "address": "1200 Old Northern Blvd, Roslyn, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T2-C3-003", "tech": "Tech 2", "cluster": "LI-3 Nassau Fitness", "name": "Planet Fitness Uniondale", "address": "585 Stewart Ave, Garden City, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T2-C3-004", "tech": "Tech 2", "cluster": "LI-3 Nassau Fitness", "name": "Retro Fitness Syosset", "address": "9 Cold Spring Rd, Syosset, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T2-C3-005", "tech": "Tech 2", "cluster": "LI-3 Nassau Fitness", "name": "Crunch Fitness Hauppauge", "address": "601 Motor Pkwy, Hauppauge, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T2-C3-006", "tech": "Tech 2", "cluster": "LI-3 Nassau Fitness", "name": "Equinox Garden City", "address": "630 Old Country Rd, Garden City, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T2-C3-007", "tech": "Tech 2", "cluster": "LI-3 Nassau Fitness", "name": "Planet Fitness Massapequa", "address": "35 Sunrise Hwy, Massapequa, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T2-C3-008", "tech": "Tech 2", "cluster": "LI-3 Nassau Fitness", "name": "LA Fitness Roslyn Heights", "address": "1060 Warner Ave, Roslyn Heights, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T2-C3-009", "tech": "Tech 2", "cluster": "LI-3 Nassau Fitness", "name": "OrangeTheory Massapequa", "address": "4800 Merrick Rd, Massapequa, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T2-C3-010", "tech": "Tech 2", "cluster": "LI-3 Nassau Fitness", "name": "F45 Garden City", "address": "600 Franklin Ave, Garden City, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T2-C4-001", "tech": "Tech 2", "cluster": "LI-4 Nassau Medical", "name": "North Shore University Hospital", "address": "300 Community Dr, Manhasset, NY", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T2-C4-002", "tech": "Tech 2", "cluster": "LI-4 Nassau Medical", "name": "Long Island Jewish Medical", "address": "270-05 76th Ave, New Hyde Park, NY", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T2-C4-003", "tech": "Tech 2", "cluster": "LI-4 Nassau Medical", "name": "Winthrop University Hospital", "address": "259 1st St, Mineola, NY", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T2-C4-004", "tech": "Tech 2", "cluster": "LI-4 Nassau Medical", "name": "Good Samaritan Hospital", "address": "1000 Montauk Hwy, West Islip, NY", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T2-C4-005", "tech": "Tech 2", "cluster": "LI-4 Nassau Medical", "name": "Stony Brook University Hospital", "address": "101 Nicolls Rd, Stony Brook, NY", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T2-C4-006", "tech": "Tech 2", "cluster": "LI-4 Nassau Medical", "name": "Huntington Hospital", "address": "270 Park Ave, Huntington, NY", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T2-C4-007", "tech": "Tech 2", "cluster": "LI-4 Nassau Medical", "name": "St Francis Hospital", "address": "100 Port Washington Blvd, Roslyn, NY", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T2-C5-001", "tech": "Tech 2", "cluster": "LI-5 Nassau Commercial", "name": "Roosevelt Field Mall", "address": "630 Old Country Rd, Garden City, NY", "segment": "Retail/Commercial", "contact_title": "Facilities Mgr"}, {"id": "T2-C5-002", "tech": "Tech 2", "cluster": "LI-5 Nassau Commercial", "name": "Broadway Mall Hicksville", "address": "358 N Broadway, Hicksville, NY", "segment": "Retail/Commercial", "contact_title": "Facilities Mgr"}, {"id": "T2-C5-003", "tech": "Tech 2", "cluster": "LI-5 Nassau Commercial", "name": "Walt Whitman Shops", "address": "160 Walt Whitman Rd, Huntington Station, NY", "segment": "Retail/Commercial", "contact_title": "Facilities Mgr"}, {"id": "T2-C5-004", "tech": "Tech 2", "cluster": "LI-5 Nassau Commercial", "name": "Smith Haven Mall", "address": "313 Smith Haven Mall, Lake Grove, NY", "segment": "Retail/Commercial", "contact_title": "Facilities Mgr"}, {"id": "T2-C6-001", "tech": "Tech 2", "cluster": "LI-6 Melville Corporate", "name": "Canon USA", "address": "1 Canon Park, Melville, NY", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T2-C6-002", "tech": "Tech 2", "cluster": "LI-6 Melville Corporate", "name": "Henry Schein", "address": "135 Duryea Rd, Melville, NY", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T2-C6-003", "tech": "Tech 2", "cluster": "LI-6 Melville Corporate", "name": "Northwell Health Corporate", "address": "2000 Marcus Ave, Lake Success, NY", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T2-C6-004", "tech": "Tech 2", "cluster": "LI-6 Melville Corporate", "name": "Broadridge Financial", "address": "5 Dakota Dr, Lake Success, NY", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T2-C6-005", "tech": "Tech 2", "cluster": "LI-6 Melville Corporate", "name": "Nikon", "address": "1300 Walt Whitman Rd, Melville, NY", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T2-C6-006", "tech": "Tech 2", "cluster": "LI-6 Melville Corporate", "name": "Pall Corporation", "address": "25 Harbor Park Dr, Port Washington, NY", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T2-C7-001", "tech": "Tech 2", "cluster": "LI-7 Suffolk Hotels", "name": "Hampton Inn Hauppauge", "address": "670 Vanderbilt Motor Pkwy, Hauppauge, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T2-C7-002", "tech": "Tech 2", "cluster": "LI-7 Suffolk Hotels", "name": "Hilton Garden Inn Islip", "address": "3485 Veterans Memorial Hwy, Bohemia, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T2-C7-003", "tech": "Tech 2", "cluster": "LI-7 Suffolk Hotels", "name": "Courtyard Ronkonkoma", "address": "5000 Express Dr S, Ronkonkoma, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T2-C7-004", "tech": "Tech 2", "cluster": "LI-7 Suffolk Hotels", "name": "Sheraton Long Island Hotel", "address": "110 Vanderbilt Motor Pkwy, Hauppauge, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T2-C7-005", "tech": "Tech 2", "cluster": "LI-7 Suffolk Hotels", "name": "Radisson Hotel Hauppauge", "address": "110 Motor Pkwy, Hauppauge, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T2-C8-001", "tech": "Tech 2", "cluster": "LI-8 Suffolk Fitness", "name": "Planet Fitness Hauppauge", "address": "1050 Motor Pkwy, Hauppauge, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T2-C8-002", "tech": "Tech 2", "cluster": "LI-8 Suffolk Fitness", "name": "LA Fitness Commack", "address": "109 Veterans Memorial Hwy, Commack, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T2-C8-003", "tech": "Tech 2", "cluster": "LI-8 Suffolk Fitness", "name": "Crunch Fitness Patchogue", "address": "200 E Main St, Patchogue, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T2-C8-004", "tech": "Tech 2", "cluster": "LI-8 Suffolk Fitness", "name": "YMCA Huntington", "address": "60 Main St, Huntington, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T2-C8-005", "tech": "Tech 2", "cluster": "LI-8 Suffolk Fitness", "name": "Anytime Fitness Ronkonkoma", "address": "2900 Veterans Memorial Hwy, Ronkonkoma, NY", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T2-C9-001", "tech": "Tech 2", "cluster": "LI-9 Suffolk Education", "name": "Stony Brook University", "address": "100 Nicolls Rd, Stony Brook, NY", "segment": "University", "contact_title": "Facilities Mgr"}, {"id": "T2-C9-002", "tech": "Tech 2", "cluster": "LI-9 Suffolk Education", "name": "Farmingdale State College", "address": "2350 Broadhollow Rd, Farmingdale, NY", "segment": "University", "contact_title": "Facilities Mgr"}, {"id": "T2-C9-003", "tech": "Tech 2", "cluster": "LI-9 Suffolk Education", "name": "Suffolk County CC Selden", "address": "533 College Rd, Selden, NY", "segment": "University", "contact_title": "Facilities Mgr"}, {"id": "T2-C10-001", "tech": "Tech 2", "cluster": "LI-10 Hamptons Hotels", "name": "Gurneys Montauk", "address": "290 Old Montauk Hwy, Montauk, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T2-C10-002", "tech": "Tech 2", "cluster": "LI-10 Hamptons Hotels", "name": "The Maidstone", "address": "207 Main St, East Hampton, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T2-C10-003", "tech": "Tech 2", "cluster": "LI-10 Hamptons Hotels", "name": "Canoe Place Inn", "address": "239 E Montauk Hwy, Hampton Bays, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T2-C10-004", "tech": "Tech 2", "cluster": "LI-10 Hamptons Hotels", "name": "Sag Harbor Inn", "address": "West Water St, Sag Harbor, NY", "segment": "Hotel", "contact_title": "GM"}, {"id": "T3-C1-001", "tech": "Tech 3", "cluster": "CT-1 Stamford Hotels", "name": "Stamford Marriott", "address": "2 Stamford Forum, Stamford, CT", "segment": "Hotel", "contact_title": "GM"}, {"id": "T3-C1-002", "tech": "Tech 3", "cluster": "CT-1 Stamford Hotels", "name": "Hilton Stamford", "address": "1 First Stamford Place, Stamford, CT", "segment": "Hotel", "contact_title": "GM"}, {"id": "T3-C1-003", "tech": "Tech 3", "cluster": "CT-1 Stamford Hotels", "name": "Westin Stamford", "address": "1 First Stamford Place, Stamford, CT", "segment": "Hotel", "contact_title": "GM"}, {"id": "T3-C1-004", "tech": "Tech 3", "cluster": "CT-1 Stamford Hotels", "name": "Hyatt Regency Greenwich", "address": "1800 E Putnam Ave, Old Greenwich, CT", "segment": "Hotel", "contact_title": "GM"}, {"id": "T3-C1-005", "tech": "Tech 3", "cluster": "CT-1 Stamford Hotels", "name": "Delamar Greenwich Harbor", "address": "500 Steamboat Rd, Greenwich, CT", "segment": "Hotel", "contact_title": "GM"}, {"id": "T3-C1-006", "tech": "Tech 3", "cluster": "CT-1 Stamford Hotels", "name": "Sheraton Stamford", "address": "700 E Main St, Stamford, CT", "segment": "Hotel", "contact_title": "GM"}, {"id": "T3-C1-007", "tech": "Tech 3", "cluster": "CT-1 Stamford Hotels", "name": "Courtyard Stamford Downtown", "address": "275 Summer St, Stamford, CT", "segment": "Hotel", "contact_title": "GM"}, {"id": "T3-C1-008", "tech": "Tech 3", "cluster": "CT-1 Stamford Hotels", "name": "Residence Inn Shelton", "address": "1001 Bridgeport Ave, Shelton, CT", "segment": "Hotel", "contact_title": "GM"}, {"id": "T3-C1-009", "tech": "Tech 3", "cluster": "CT-1 Stamford Hotels", "name": "Delamar Westport", "address": "275 Riverside Ave, Westport, CT", "segment": "Hotel", "contact_title": "GM"}, {"id": "T3-C1-010", "tech": "Tech 3", "cluster": "CT-1 Stamford Hotels", "name": "Trumbull Marriott", "address": "180 Hawley Ln, Trumbull, CT", "segment": "Hotel", "contact_title": "GM"}, {"id": "T3-C2-001", "tech": "Tech 3", "cluster": "CT-2 Stamford Corporate", "name": "UBS Stamford", "address": "677 Washington Blvd, Stamford, CT", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T3-C2-002", "tech": "Tech 3", "cluster": "CT-2 Stamford Corporate", "name": "Charter Communications", "address": "400 Atlantic St, Stamford, CT", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T3-C2-003", "tech": "Tech 3", "cluster": "CT-2 Stamford Corporate", "name": "Synchrony Financial", "address": "777 Long Ridge Rd, Stamford, CT", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T3-C2-004", "tech": "Tech 3", "cluster": "CT-2 Stamford Corporate", "name": "Gartner", "address": "56 Top Gallant Rd, Stamford, CT", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T3-C2-005", "tech": "Tech 3", "cluster": "CT-2 Stamford Corporate", "name": "Pitney Bowes", "address": "3001 Summer St, Stamford, CT", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T3-C2-006", "tech": "Tech 3", "cluster": "CT-2 Stamford Corporate", "name": "Booking Holdings", "address": "800 Connecticut Ave, Norwalk, CT", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T3-C2-007", "tech": "Tech 3", "cluster": "CT-2 Stamford Corporate", "name": "Cigna Healthcare", "address": "900 Cottage Grove Rd, Bloomfield, CT", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T3-C2-008", "tech": "Tech 3", "cluster": "CT-2 Stamford Corporate", "name": "Frontier Communications", "address": "401 Merritt 7, Norwalk, CT", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T3-C3-001", "tech": "Tech 3", "cluster": "CT-3 Greenwich Fitness", "name": "Equinox Greenwich", "address": "1 Greenwich Ave, Greenwich, CT", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T3-C3-002", "tech": "Tech 3", "cluster": "CT-3 Greenwich Fitness", "name": "Planet Fitness Stamford", "address": "111 High Ridge Rd, Stamford, CT", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T3-C3-003", "tech": "Tech 3", "cluster": "CT-3 Greenwich Fitness", "name": "LA Fitness Norwalk", "address": "550 Main Ave, Norwalk, CT", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T3-C3-004", "tech": "Tech 3", "cluster": "CT-3 Greenwich Fitness", "name": "YMCA Greenwich", "address": "50 E Putnam Ave, Greenwich, CT", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T3-C3-005", "tech": "Tech 3", "cluster": "CT-3 Greenwich Fitness", "name": "OrangeTheory Greenwich", "address": "49 Greenwich Ave, Greenwich, CT", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T3-C3-006", "tech": "Tech 3", "cluster": "CT-3 Greenwich Fitness", "name": "SoulCycle Darien", "address": "1034 Post Rd, Darien, CT", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T3-C3-007", "tech": "Tech 3", "cluster": "CT-3 Greenwich Fitness", "name": "Anytime Fitness Stamford", "address": "900 Summer St, Stamford, CT", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T3-C3-008", "tech": "Tech 3", "cluster": "CT-3 Greenwich Fitness", "name": "YMCA Stamford", "address": "909 Washington Blvd, Stamford, CT", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T3-C3-009", "tech": "Tech 3", "cluster": "CT-3 Greenwich Fitness", "name": "F45 Stamford", "address": "76 Broad St, Stamford, CT", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T3-C3-010", "tech": "Tech 3", "cluster": "CT-3 Greenwich Fitness", "name": "CrossFit Greenwich", "address": "4 Sound Shore Dr, Greenwich, CT", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T3-C4-001", "tech": "Tech 3", "cluster": "CT-4 SW Connecticut Medical", "name": "Stamford Hospital", "address": "30 Shelburne Rd, Stamford, CT", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T3-C4-002", "tech": "Tech 3", "cluster": "CT-4 SW Connecticut Medical", "name": "Greenwich Hospital", "address": "5 Perryridge Rd, Greenwich, CT", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T3-C4-003", "tech": "Tech 3", "cluster": "CT-4 SW Connecticut Medical", "name": "Norwalk Hospital", "address": "34 Maple St, Norwalk, CT", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T3-C4-004", "tech": "Tech 3", "cluster": "CT-4 SW Connecticut Medical", "name": "Bridgeport Hospital", "address": "267 Grant St, Bridgeport, CT", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T3-C4-005", "tech": "Tech 3", "cluster": "CT-4 SW Connecticut Medical", "name": "Milford Hospital", "address": "300 Seaside Ave, Milford, CT", "segment": "Medical", "contact_title": "Facilities Mgr"}, {"id": "T3-C5-001", "tech": "Tech 3", "cluster": "CT-5 Greenwich Clubs", "name": "Greenwich Country Club", "address": "19 Doubling Rd, Greenwich, CT", "segment": "Club/Resort", "contact_title": "GM"}, {"id": "T3-C5-002", "tech": "Tech 3", "cluster": "CT-5 Greenwich Clubs", "name": "Stanwich Club", "address": "888 North St, Greenwich, CT", "segment": "Club/Resort", "contact_title": "GM"}, {"id": "T3-C5-003", "tech": "Tech 3", "cluster": "CT-5 Greenwich Clubs", "name": "Round Hill Club", "address": "33 Round Hill Rd, Greenwich, CT", "segment": "Club/Resort", "contact_title": "GM"}, {"id": "T3-C5-004", "tech": "Tech 3", "cluster": "CT-5 Greenwich Clubs", "name": "Woodway Country Club", "address": "540 Hoyt St, Darien, CT", "segment": "Club/Resort", "contact_title": "GM"}, {"id": "T3-C5-005", "tech": "Tech 3", "cluster": "CT-5 Greenwich Clubs", "name": "Burning Tree Club", "address": "120 Burning Tree Rd, Greenwich, CT", "segment": "Club/Resort", "contact_title": "GM"}, {"id": "T3-C5-006", "tech": "Tech 3", "cluster": "CT-5 Greenwich Clubs", "name": "Wee Burn Country Club", "address": "410 Hollow Tree Ridge Rd, Darien, CT", "segment": "Club/Resort", "contact_title": "GM"}, {"id": "T3-C6-001", "tech": "Tech 3", "cluster": "CT-6 Westport Area", "name": "YMCA Westport", "address": "90 Post Rd W, Westport, CT", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T3-C6-002", "tech": "Tech 3", "cluster": "CT-6 Westport Area", "name": "Pure Barre Westport", "address": "374 Post Rd E, Westport, CT", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T3-C6-003", "tech": "Tech 3", "cluster": "CT-6 Westport Area", "name": "New Canaan Country Club", "address": "49 Country Club Rd, New Canaan, CT", "segment": "Club/Resort", "contact_title": "GM"}, {"id": "T3-C6-004", "tech": "Tech 3", "cluster": "CT-6 Westport Area", "name": "Tokeneke Club", "address": "One Tokeneke Rd, Darien, CT", "segment": "Club/Resort", "contact_title": "GM"}, {"id": "T3-C6-005", "tech": "Tech 3", "cluster": "CT-6 Westport Area", "name": "Sacred Heart University", "address": "5151 Park Ave, Fairfield, CT", "segment": "University", "contact_title": "Facilities Mgr"}, {"id": "T3-C6-006", "tech": "Tech 3", "cluster": "CT-6 Westport Area", "name": "Fairfield University", "address": "1073 N Benson Rd, Fairfield, CT", "segment": "University", "contact_title": "Facilities Mgr"}, {"id": "T3-C7-001", "tech": "Tech 3", "cluster": "CT-7 Bridgeport Corporate", "name": "Hubbell Inc", "address": "40 Waterview Dr, Shelton, CT", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T3-C7-002", "tech": "Tech 3", "cluster": "CT-7 Bridgeport Corporate", "name": "Edgewell Personal Care", "address": "1 Research Dr, Shelton, CT", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T3-C7-003", "tech": "Tech 3", "cluster": "CT-7 Bridgeport Corporate", "name": "Cartus Corporation", "address": "40 Apple Ridge Rd, Danbury, CT", "segment": "Corporate", "contact_title": "Facilities Mgr"}, {"id": "T3-C7-004", "tech": "Tech 3", "cluster": "CT-7 Bridgeport Corporate", "name": "LA Fitness Shelton", "address": "850 Bridgeport Ave, Shelton, CT", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T3-C7-005", "tech": "Tech 3", "cluster": "CT-7 Bridgeport Corporate", "name": "Planet Fitness Bridgeport", "address": "1000 Main St, Bridgeport, CT", "segment": "Fitness", "contact_title": "Owner/Mgr"}, {"id": "T3-C7-006", "tech": "Tech 3", "cluster": "CT-7 Bridgeport Corporate", "name": "University of Bridgeport", "address": "126 Park Ave, Bridgeport, CT", "segment": "University", "contact_title": "Facilities Mgr"}, {"id": "T3-C7-007", "tech": "Tech 3", "cluster": "CT-7 Bridgeport Corporate", "name": "Quinnipiac University", "address": "275 Mount Carmel Ave, Hamden, CT", "segment": "University", "contact_title": "Facilities Mgr"}]</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a14;color:#e0e0e0;min-height:100vh}
+.hdr{background:#12122a;padding:11px 14px;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid #c9a84c;position:sticky;top:0;z-index:10}
+.hdr h1{color:#c9a84c;font-size:14px;letter-spacing:2px;font-weight:600}
+.hdr span{color:#555;font-size:11px}
+.tech-bar{display:flex}
+.tb{flex:1;padding:9px 4px;text-align:center;font-size:10px;letter-spacing:1px;background:#0d0d1a;color:#555;border:none;cursor:pointer;border-right:1px solid #1a1a2e;border-bottom:2px solid #1a1a2e}
+.tb.on{background:#12122a;color:#c9a84c;border-bottom:2px solid #c9a84c}
+.kpis{display:flex;background:#0d0d1a;padding:8px 12px;gap:6px;border-bottom:1px solid #1a1a2e}
+.kpi{flex:1;text-align:center}.kpi .n{font-size:18px;font-weight:600;color:#f0c040}.kpi .l{font-size:9px;color:#444;letter-spacing:1px;margin-top:2px}
+.tabs{display:flex;background:#0a0a14;border-bottom:1px solid #1a1a2e}
+.tab{flex:1;padding:9px;text-align:center;font-size:10px;color:#555;cursor:pointer;letter-spacing:1px;background:none;border:none;border-bottom:2px solid transparent}
+.tab.on{color:#c9a84c;border-bottom:2px solid #c9a84c}
+.filters{padding:8px 10px;background:#0a0a14;display:flex;gap:5px;flex-wrap:wrap;border-bottom:1px solid #1a1a2e}
+.filters select,.filters input{background:#12122a;border:1px solid #1a1a2e;color:#bbb;padding:6px 8px;border-radius:4px;font-size:11px;flex:1;min-width:100px}
+#list{padding:8px 10px;display:flex;flex-direction:column;gap:5px;padding-bottom:20px}
+.card{background:#12122a;border:1px solid #1a1a2e;border-radius:6px;padding:10px 11px;cursor:pointer;transition:border-color .15s;display:flex;gap:10px;align-items:flex-start}
+.card:hover,.card:active{border-color:#c9a84c}
+.card.won{border-left:3px solid #4caf7d}.card.lost{border-left:3px solid #e05555}
+.card.hot{border-left:3px solid #c9a84c}.card.active{border-left:3px solid #5599ff}
+.cphoto{width:42px;height:42px;border-radius:4px;background:#1a1a2e;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden;font-size:20px;color:#333}
+.cphoto img{width:100%;height:100%;object-fit:cover}
+.cinfo{flex:1;min-width:0}
+.cn{font-size:12px;font-weight:600;color:#e0e0e0;display:flex;justify-content:space-between;align-items:flex-start;gap:6px}
+.cb{font-size:9px;padding:2px 6px;border-radius:8px;background:rgba(201,168,76,.15);color:#c9a84c;border:1px solid rgba(201,168,76,.3);white-space:nowrap;flex-shrink:0}
+.ca{font-size:10px;color:#444;margin-top:3px}
+.cc{font-size:10px;color:#5599ff;margin-top:2px}
+.cs{font-size:10px;color:#666;margin-top:2px}
+.lv{color:#4caf7d}
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:50;align-items:flex-end;justify-content:center}
+.overlay.open{display:flex}
+.drawer{background:#12122a;border-radius:12px 12px 0 0;width:100%;max-width:600px;max-height:90vh;overflow-y:auto;padding:16px 16px 30px}
+.dh{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.dh h2{color:#c9a84c;font-size:14px;font-weight:600}
+.xb{background:none;border:none;color:#555;font-size:22px;cursor:pointer;line-height:1;padding:4px}
+.dm{font-size:10px;color:#444;margin-bottom:12px;line-height:1.4}
+.photo-area{border:1px dashed #2a2a3e;border-radius:6px;padding:10px;text-align:center;margin-bottom:12px;cursor:pointer;position:relative;min-height:60px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px}
+.photo-area input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.photo-preview{width:100%;max-height:180px;object-fit:cover;border-radius:4px}
+.photo-placeholder{color:#444;font-size:11px}
+.fg{margin-bottom:10px}
+.fg label{display:block;font-size:9px;color:#555;letter-spacing:1px;margin-bottom:3px;text-transform:uppercase}
+.fg select,.fg textarea,.fg input[type=text],.fg input[type=tel],.fg input[type=email],.fg input[type=number]{width:100%;background:#0a0a14;border:1px solid #1a1a2e;color:#ccc;padding:8px 10px;border-radius:4px;font-size:13px;-webkit-appearance:none}
+.fg textarea{height:65px;resize:vertical}
+.frow{display:flex;gap:8px}
+.frow .fg{flex:1}
+.brow{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.btn{padding:10px 18px;border:none;border-radius:4px;cursor:pointer;font-size:12px;letter-spacing:1px;font-weight:600;-webkit-tap-highlight-color:transparent}
+.bg{background:#c9a84c;color:#000}
+.bg:active{background:#f0c040}
+.bo{background:none;border:1px solid #2a2a3e;color:#777}
+.bm{background:none;border:1px solid #5599ff;color:#5599ff;text-decoration:none;padding:10px 14px;border-radius:4px;font-size:12px;display:inline-flex;align-items:center}
+.sc{display:none;padding:10px 10px 30px}
+.ss{background:#12122a;border:1px solid #1a1a2e;border-radius:6px;padding:12px;margin-bottom:10px}
+.ss h3{font-size:9px;color:#c9a84c;letter-spacing:2px;margin-bottom:10px;text-transform:uppercase}
+.sr{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #0d0d1a;font-size:12px;color:#ccc}
+.sr:last-child{border-bottom:none}
+.toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%);background:#c9a84c;color:#000;padding:9px 22px;border-radius:20px;font-size:12px;font-weight:600;opacity:0;transition:opacity .3s;pointer-events:none;z-index:999;white-space:nowrap}
+.toast.show{opacity:1}
+
+.lead-card{background:#12122a;border:1px solid #1a1a2e;border-radius:6px;padding:12px;margin-bottom:8px}
+.lead-card.pm{border-left:3px solid #c9a84c}
+.lead-card.repair{border-left:3px solid #5599ff}
+.lead-card.proposal{border-left:3px solid #4caf7d}
+.lead-name{font-size:13px;font-weight:600;color:#e0e0e0;margin-bottom:3px}
+.lead-sub{font-size:10px;color:#444;margin-bottom:4px}
+.lead-contact{font-size:11px;color:#5599ff;margin-bottom:6px}
+.lead-tag{display:inline-block;font-size:9px;padding:2px 8px;border-radius:8px;margin-bottom:8px;font-weight:600;letter-spacing:.5px}
+.tag-pm{background:rgba(201,168,76,.2);color:#c9a84c;border:1px solid rgba(201,168,76,.4)}
+.tag-repair{background:rgba(85,153,255,.2);color:#5599ff;border:1px solid rgba(85,153,255,.4)}
+.tag-proposal{background:rgba(76,175,125,.2);color:#4caf7d;border:1px solid rgba(76,175,125,.4)}
+.tag-fu{background:rgba(224,85,85,.2);color:#e05555;border:1px solid rgba(224,85,85,.4)}
+.action-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.act-btn{padding:7px 12px;border-radius:4px;font-size:10px;font-weight:600;cursor:pointer;border:none;text-decoration:none;display:inline-flex;align-items:center;letter-spacing:.5px}
+.act-call{background:rgba(76,175,125,.2);color:#4caf7d;border:1px solid rgba(76,175,125,.4)}
+.act-email{background:rgba(85,153,255,.2);color:#5599ff;border:1px solid rgba(85,153,255,.4)}
+.act-edit{background:rgba(201,168,76,.15);color:#c9a84c;border:1px solid rgba(201,168,76,.3)}
+.act-map{background:rgba(255,255,255,.05);color:#666;border:1px solid #1a1a2e}
+.empty-leads{text-align:center;color:#333;padding:40px 20px;font-size:12px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="hdr"><h1>FMT FIELD TRACKER</h1><span id="hc">loading...</span></div>
+<div class="tech-bar">
+  <button class="tb on" data-t="all">ALL</button>
+  <button class="tb" data-t="Tech 1">KRISTOPHER</button>
+  <button class="tb" data-t="Tech 2">MARIO</button>
+  <button class="tb" data-t="Tech 3">CT TECH</button>
+</div>
+<div class="kpis">
+  <div class="kpi"><div class="n" id="k0">0</div><div class="l">TOTAL</div></div>
+  <div class="kpi"><div class="n" id="k1">0</div><div class="l">VISITED</div></div>
+  <div class="kpi"><div class="n" id="k2">0</div><div class="l">PM LEADS</div></div>
+  <div class="kpi"><div class="n" id="k3">0</div><div class="l">WON</div></div>
+</div>
+<div class="tabs">
+  <button class="tab on" data-v="field">FIELD</button>
+  <button class="tab" data-v="leads" id="leads-tab">LEADS <span id="leads-badge" style="background:#e05555;color:#fff;font-size:9px;padding:1px 5px;border-radius:8px;display:none">0</span></button>
+  <button class="tab" data-v="score">SCORECARD</button>
+</div>
+<div id="field-view">
+  <div class="filters">
+    <select id="cf"><option value="">ALL CLUSTERS</option></select>
+    <select id="sf"><option value="">ALL STATUS</option><option>Not Visited</option><option>Introduced</option><option>Spoke to Manager</option><option>Follow Up Needed</option><option>Proposal Sent</option><option>Won</option><option>Lost</option></select>
+    <select id="gf"><option value="">ALL SEGMENTS</option><option>Hotel</option><option>Fitness</option><option>Corporate</option><option>Medical</option><option>Club/Resort</option><option>University</option><option>Retail/Commercial</option></select>
+    <input id="qf" placeholder="Search name, address, contact...">
+  </div>
+  <div id="list"></div>
+</div>
+<div id="leads-view" style="display:none;padding:8px 10px;padding-bottom:20px"><div id="leads-list"></div></div>
+<div class="sc" id="score-view">
+  <div class="ss"><h3>Status Breakdown</h3><div id="sbd"></div></div>
+  <div class="ss"><h3>By Tech</h3><div id="tbd"></div></div>
+  <div class="ss">
+    <h3>Actions</h3>
+    <button class="btn bg" onclick="exportCSV()" style="width:100%;margin-bottom:8px">EXPORT CSV (SERVICEMINDER)</button>
+    <button class="btn bo" onclick="sendReport()" style="width:100%">SEND DAILY EMAIL REPORT</button>
+    <div id="es" style="font-size:11px;margin-top:8px;display:none;padding:6px 10px;border-radius:4px"></div>
+  </div>
+</div>
+<div class="overlay" id="ov">
+  <div class="drawer">
+    <div class="dh"><h2 id="dn">—</h2><button class="xb" id="xb">&#x2715;</button></div>
+    <div class="dm" id="dm"></div>
+    <div class="photo-area" id="pa">
+      <input type="file" accept="image/*" capture="environment" id="pi">
+      <img class="photo-preview" id="pp" style="display:none">
+      <div class="photo-placeholder" id="ph">&#128247; TAP TO PHOTO / UPLOAD</div>
+    </div>
+    <div class="fg"><label>Status</label>
+      <select id="ms"><option>Not Visited</option><option>Introduced</option><option>Spoke to Manager</option><option>Follow Up Needed</option><option>Proposal Sent</option><option>Won</option><option>Lost</option></select></div>
+    <div class="frow">
+      <div class="fg"><label>Contact Name</label><input type="text" id="mc" placeholder="Manager / Owner name"></div>
+      <div class="fg"><label>Phone</label><input type="tel" id="mphone" placeholder="(555) 000-0000"></div>
+    </div>
+    <div class="frow">
+      <div class="fg"><label>Email</label><input type="email" id="memail" placeholder="contact@property.com"></div>
+      <div class="fg"><label>Equipment Count</label><input type="number" id="meq" placeholder="# units" min="0"></div>
+    </div>
+    <div class="frow">
+      <div class="fg"><label>Service Need</label>
+        <select id="mn"><option value="">-</option><option>PM Contract</option><option>One-Time Repair</option><option>Equipment Assessment</option><option>No Need Identified</option></select></div>
+      <div class="fg"><label>Follow Up</label>
+        <select id="mf"><option value="">-</option><option>Yes - Send Proposal</option><option>Yes - Call Back</option><option>Yes - Email Info</option><option>No Follow Up</option></select></div>
+    </div>
+    <div class="fg"><label>Notes</label><textarea id="mo" placeholder="Key info, decision maker, next steps..."></textarea></div>
+    <div class="brow">
+      <button class="btn bg" id="sv">SAVE</button>
+      <a class="bm" id="ml" target="_blank">MAP</a>
+      <button class="btn bo" id="xb2">CANCEL</button>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+var P = JSON.parse(document.getElementById("fmt-data").textContent);
+var cur = "all", cid = null;
+emailjs.init("TIdTUD8SlyP_4NXMC");
+
+function load() {
+  P.forEach(function(p) {
+    var s = localStorage.getItem("fmt10_" + p.id);
+    if (s) { try { Object.assign(p, JSON.parse(s)); } catch(e) {} }
+    if (!p.status) p.status = "Not Visited";
+    if (!p.notes) p.notes = "";
+    if (!p.service_need) p.service_need = "";
+    if (!p.follow_up) p.follow_up = "";
+    if (!p.contact) p.contact = "";
+    if (!p.phone) p.phone = "";
+    if (!p.email) p.email = "";
+    if (!p.equipment) p.equipment = "";
+    if (!p.last_visit) p.last_visit = "";
+    if (!p.photo) p.photo = "";
+  });
+}
+function saveP(p) {
+  localStorage.setItem("fmt10_" + p.id, JSON.stringify({
+    status:p.status, notes:p.notes, service_need:p.service_need, follow_up:p.follow_up,
+    contact:p.contact, phone:p.phone, email:p.email, equipment:p.equipment,
+    last_visit:p.last_visit, photo:p.photo
+  }));
+}
+function scope() { return cur === "all" ? P : P.filter(function(p) { return p.tech === cur; }); }
+function filtered() {
+  var cl = document.getElementById("cf").value;
+  var st = document.getElementById("sf").value;
+  var sg = document.getElementById("gf").value;
+  var q = document.getElementById("qf").value.toLowerCase();
+  return scope().filter(function(p) {
+    if (cl && p.cluster !== cl) return false;
+    if (st && p.status !== st) return false;
+    if (sg && p.segment !== sg) return false;
+    if (q && !p.name.toLowerCase().includes(q) && !p.address.toLowerCase().includes(q) && !(p.contact||"").toLowerCase().includes(q)) return false;
+    return true;
+  });
+}
+function kpis() {
+  var sc = scope();
+  document.getElementById("k0").textContent = sc.length;
+  document.getElementById("k1").textContent = sc.filter(function(p) { return p.status !== "Not Visited"; }).length;
+  document.getElementById("k2").textContent = sc.filter(function(p) { return p.service_need === "PM Contract"; }).length;
+  document.getElementById("k3").textContent = sc.filter(function(p) { return p.status === "Won"; }).length;
+  document.getElementById("hc").textContent = sc.length + " prospects";
+}
+function clusters() {
+  var sel = document.getElementById("cf"), cv = sel.value;
+  sel.innerHTML = "<option value=''>ALL CLUSTERS</option>";
+  var cls = [];
+  scope().forEach(function(p) { if (!cls.includes(p.cluster)) cls.push(p.cluster); });
+  cls.sort().forEach(function(c) { var o = document.createElement("option"); o.value = c; o.textContent = c; sel.appendChild(o); });
+  sel.value = cv;
+}
+function sc2(s) {
+  if (s === "Won") return "won"; if (s === "Lost") return "lost";
+  if (s === "Proposal Sent" || s === "Follow Up Needed") return "hot";
+  if (s === "Introduced" || s === "Spoke to Manager") return "active";
+  return "";
+}
+function render() {
+  var items = filtered(), h = "";
+  items.forEach(function(p) {
+    h += "<div class='card " + sc2(p.status) + "' data-id='" + p.id + "'>";
+    h += "<div class='cphoto'>";
+    if (p.photo) h += "<img src='" + p.photo + "'>";
+    else h += "&#127970;";
+    h += "</div><div class='cinfo'>";
+    h += "<div class='cn'>" + p.name + "<span class='cb'>" + p.segment + "</span></div>";
+    h += "<div class='ca'>" + p.address + "</div>";
+    if (p.contact) h += "<div class='cc'>" + p.contact + (p.phone ? " &middot; " + p.phone : "") + "</div>";
+    h += "<div class='cs'>" + (p.status || "Not Visited");
+    if (p.service_need) h += " &middot; " + p.service_need;
+    if (p.equipment) h += " &middot; " + p.equipment + " units";
+    if (p.last_visit) h += " <span class='lv'>&middot; " + p.last_visit + "</span>";
+    h += "</div></div></div>";
+  });
+  if (!h) h = "<div style='text-align:center;color:#333;padding:40px;font-size:13px'>No results</div>";
+  document.getElementById("list").innerHTML = h;
+  document.querySelectorAll(".card").forEach(function(c) {
+    c.addEventListener("click", function() { openM(this.dataset.id); });
+  });
+  kpis();
+}
+function openM(id) {
+  cid = id;
+  var p = P.find(function(x) { return x.id === id; });
+  document.getElementById("dn").textContent = p.name;
+  document.getElementById("dm").textContent = p.address + " \u00b7 " + p.contact_title + " \u00b7 " + p.cluster;
+  document.getElementById("ms").value = p.status || "Not Visited";
+  document.getElementById("mc").value = p.contact || "";
+  document.getElementById("mphone").value = p.phone || "";
+  document.getElementById("memail").value = p.email || "";
+  document.getElementById("meq").value = p.equipment || "";
+  document.getElementById("mn").value = p.service_need || "";
+  document.getElementById("mf").value = p.follow_up || "";
+  document.getElementById("mo").value = p.notes || "";
+  document.getElementById("ml").href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(p.address);
+  var pp = document.getElementById("pp"), ph = document.getElementById("ph");
+  if (p.photo) { pp.src = p.photo; pp.style.display = "block"; ph.style.display = "none"; }
+  else { pp.style.display = "none"; ph.style.display = "block"; }
+  document.getElementById("ov").classList.add("open");
+}
+function closeM() { document.getElementById("ov").classList.remove("open"); cid = null; }
+function saveM() {
+  var p = P.find(function(x) { return x.id === cid; });
+  p.status = document.getElementById("ms").value;
+  p.contact = document.getElementById("mc").value;
+  p.phone = document.getElementById("mphone").value;
+  p.email = document.getElementById("memail").value;
+  p.equipment = document.getElementById("meq").value;
+  p.service_need = document.getElementById("mn").value;
+  p.follow_up = document.getElementById("mf").value;
+  p.notes = document.getElementById("mo").value;
+  p.last_visit = new Date().toLocaleDateString();
+  saveP(p);
+  if (p.service_need === "PM Contract" || p.service_need === "One-Time Repair" || p.follow_up === "Yes - Send Proposal") {
+    emailjs.send("service_tuitok8", "template_0eoj1yb", {
+      notes: "LEAD ALERT\n\nProperty: " + p.name + "\nAddress: " + p.address + "\nTech: " + p.tech + "\nContact: " + p.contact + "\nPhone: " + p.phone + "\nStatus: " + p.status + "\nNeed: " + p.service_need + "\nEquipment: " + p.equipment + " units\nNotes: " + p.notes
+    });
+  }
+  closeM();
+  render();
+  updateLeadsBadge();
+  if(document.getElementById("leads-view").style.display!=="none")renderLeads();
+  toast("Saved!");
+}
+document.getElementById("pi").addEventListener("change", function(e) {
+  var f = e.target.files[0]; if (!f) return;
+  var r = new FileReader();
+  r.onload = function(ev) {
+    var p = P.find(function(x) { return x.id === cid; });
+    if (p) {
+      p.photo = ev.target.result;
+      document.getElementById("pp").src = ev.target.result;
+      document.getElementById("pp").style.display = "block";
+      document.getElementById("ph").style.display = "none";
+    }
+  };
+  r.readAsDataURL(f);
+});
+function toast(m) { var t = document.getElementById("toast"); t.textContent = m; t.classList.add("show"); setTimeout(function() { t.classList.remove("show"); }, 2000); }
+function scorecard() {
+  var sc = scope(), byS = {}, h = "";
+  sc.forEach(function(p) { var s = p.status || "Not Visited"; byS[s] = (byS[s] || 0) + 1; });
+  ["Not Visited","Introduced","Spoke to Manager","Follow Up Needed","Proposal Sent","Won","Lost"].forEach(function(s) {
+    h += "<div class='sr'><span>" + s + "</span><span>" + (byS[s] || 0) + "</span></div>";
+  });
+  document.getElementById("sbd").innerHTML = h;
+  var byT = {}, th = "";
+  P.forEach(function(p) {
+    if (!byT[p.tech]) byT[p.tech] = {t:0,v:0,pm:0,w:0};
+    byT[p.tech].t++;
+    if (p.status && p.status !== "Not Visited") byT[p.tech].v++;
+    if (p.service_need === "PM Contract") byT[p.tech].pm++;
+    if (p.status === "Won") byT[p.tech].w++;
+  });
+  ["Tech 1","Tech 2","Tech 3"].forEach(function(t) {
+    var d = byT[t] || {t:0,v:0,pm:0,w:0};
+    th += "<div class='sr' style='flex-direction:column;align-items:flex-start;gap:3px'>";
+    th += "<strong style='color:#c9a84c;font-size:12px'>" + t + "</strong>";
+    th += "<span style='color:#444;font-size:10px'>" + d.v + "/" + d.t + " visited &middot; " + d.pm + " PM leads &middot; " + d.w + " won</span></div>";
+  });
+  document.getElementById("tbd").innerHTML = th;
+}
+function exportCSV() {
+  var sc = scope();
+  var rows = ["Name,Address,Segment,Contact Title,Contact Name,Phone,Email,Equipment Count,Tech,Cluster,Status,Service Need,Follow Up,Last Visit,Notes"];
+  sc.forEach(function(p) {
+    rows.push([p.name,p.address,p.segment,p.contact_title,p.contact||"",p.phone||"",p.email||"",p.equipment||"",p.tech,p.cluster,p.status||"",p.service_need||"",p.follow_up||"",p.last_visit||"",p.notes||""].map(function(v) {
+      return '"' + String(v).replace(/"/g, '""') + '"';
+    }).join(","));
+  });
+  var a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([rows.join("\n")], {type:"text/csv"}));
+  a.download = "FMT_" + new Date().toISOString().slice(0,10) + ".csv";
+  a.click();
+}
+function sendReport() {
+  var sc = scope();
+  var body = "FMT DAILY REPORT\nDate: " + new Date().toLocaleDateString() + "\nTech: " + cur + "\n\n";
+  body += "Visited: " + sc.filter(function(p) { return p.status !== "Not Visited"; }).length + "/" + sc.length + "\n";
+  body += "PM Leads: " + sc.filter(function(p) { return p.service_need === "PM Contract"; }).length + "\n";
+  body += "Won: " + sc.filter(function(p) { return p.status === "Won"; }).length + "\n\nACTIVE LEADS:\n";
+  sc.filter(function(p) { return p.status && p.status !== "Not Visited" && p.status !== "Lost"; }).forEach(function(p) {
+    body += p.name + " | " + p.status + " | " + (p.service_need || "-") + (p.contact ? " | " + p.contact : "") + (p.phone ? " | " + p.phone : "") + "\n";
+  });
+  var el = document.getElementById("es");
+  el.style.display = "block"; el.style.background = "rgba(201,168,76,.1)"; el.style.color = "#c9a84c"; el.textContent = "Sending...";
+  emailjs.send("service_tuitok8", "template_0eoj1yb", {notes: body}).then(function() {
+    el.style.background = "rgba(76,175,125,.1)"; el.style.color = "#4caf7d"; el.textContent = "Report sent successfully!";
+  }, function(err) {
+    el.style.background = "rgba(224,85,85,.1)"; el.style.color = "#e05555"; el.textContent = "Send failed. Check EmailJS setup.";
+  });
+}
+document.querySelectorAll(".tb").forEach(function(b) {
+  b.addEventListener("click", function() {
+    cur = this.dataset.t;
+    document.querySelectorAll(".tb").forEach(function(x) { x.classList.remove("on"); });
+    this.classList.add("on");
+    clusters(); render();
+  });
+});
+document.querySelectorAll(".tab").forEach(function(b) {
+  b.addEventListener("click", function() {
+    var v = this.dataset.v;
+    document.querySelectorAll(".tab").forEach(function(x) { x.classList.remove("on"); });
+    this.classList.add("on");
+    document.getElementById("field-view").style.display = v === "field" ? "block" : "none";
+    document.getElementById("score-view").style.display = v === "score" ? "block" : "none";
+    if (v === "score") scorecard();
+  });
+});
+document.getElementById("sv").addEventListener("click", saveM);
+document.getElementById("xb").addEventListener("click", closeM);
+document.getElementById("xb2").addEventListener("click", closeM);
+document.getElementById("ov").addEventListener("click", function(e) { if (e.target === this) closeM(); });
+document.getElementById("cf").addEventListener("change", render);
+document.getElementById("sf").addEventListener("change", render);
+document.getElementById("gf").addEventListener("change", render);
+document.getElementById("qf").addEventListener("input", render);
+load(); clusters(); render();
+</script>
+</body>
+</html>
